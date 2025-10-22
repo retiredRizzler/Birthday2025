@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🥂 Fantine & Rayan Birthday - 24 & 25 Years</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ===== VARIABLES MODULAIRES - PREMIUM NIGHTCLUB THEME ===== */
+      :root {
+        --primary-gold: #ffd700;
+        --accent-rose: #ff6b9d;
+        --deep-purple: #1a0033;
+        --rich-black: #0d0d0d;
+        --champagne: #f5e6a3;
+        --platinum: #e5e4e2;
+        --text-light: #ffffff;
+        --text-muted: #b8b8b8;
+        --glass-bg: rgba(255, 255, 255, 0.08);
+        --glass-border: rgba(255, 215, 0, 0.2);
+        --gradient-main: radial-gradient(
+          ellipse at top,
+          #1a0033 0%,
+          #0d0d0d 70%,
+          #000000 100%
+        );
+        --gradient-accent: linear-gradient(
+          135deg,
+          #ffd700 0%,
+          #ff6b9d 50%,
+          #8a2be2 100%
+        );
+        --gradient-card: linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 215, 0, 0.05) 100%
+        );
+        --neon-glow: 0 0 20px rgba(255, 215, 0, 0.6),
+          0 0 40px rgba(255, 215, 0, 0.4), 0 0 60px rgba(255, 215, 0, 0.2);
+        --shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--gradient-main);
+        min-height: 100vh;
+        color: var(--text-light);
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      /* Background animated texture */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+            circle at 20% 50%,
+            rgba(255, 215, 0, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 107, 157, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 40% 80%,
+            rgba(138, 43, 226, 0.1) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      /* Luxury floating particles - FIXED */
+      .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .particle {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: var(--primary-gold);
+        border-radius: 50%;
+        animation: luxuryFloat 8s infinite ease-in-out;
+        opacity: 0.8;
+        box-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
+      }
+
+      .particle:nth-child(2n) {
+        background: var(--accent-rose);
+        box-shadow: 0 0 6px rgba(255, 107, 157, 0.8);
+        animation-duration: 10s;
+      }
+
+      .particle:nth-child(3n) {
+        background: var(--champagne);
+        box-shadow: 0 0 6px rgba(245, 230, 163, 0.8);
+        animation-duration: 12s;
+      }
+
+      /* FIXED: Particle animation now travels from bottom to top of viewport */
+      @keyframes luxuryFloat {
+        0% {
+          transform: translateY(100vh) translateX(0px) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(50vh) translateX(30px) rotate(180deg);
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-20vh) translateX(60px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Container principal */
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        position: relative;
+        z-index: 10;
+      }
+
+      /* Premium Header */
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+        background: var(--gradient-card);
+        backdrop-filter: blur(25px);
+        border: 2px solid var(--glass-border);
+        border-radius: 30px;
+        padding: 50px 30px;
+        box-shadow: var(--shadow-premium);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 215, 0, 0.1),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      @keyframes shimmer {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 900;
+        background: var(--gradient-accent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        text-shadow: var(--neon-glow);
+        letter-spacing: -1px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .subtitle {
+        font-family: "Inter", sans-serif;
+        font-size: clamp(1.1rem, 3vw, 1.6rem);
+        font-weight: 300;
+        color: var(--champagne);
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .date-info {
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
+        color: var(--primary-gold);
+        font-weight: 600;
+        padding: 15px 30px;
+        border: 1px solid var(--primary-gold);
+        border-radius: 50px;
+        display: inline-block;
+        background: rgba(255, 215, 0, 0.1);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      }
+
+      /* Elite Countdown */
+      .countdown-section {
+        margin: 60px 0;
+        text-align: center;
+      }
+
+      .countdown-title {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        margin-bottom: 40px;
+        color: var(--champagne);
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+
+      .countdown-item {
+        background: var(--gradient-card);
+        backdrop-filter: blur(25px);
+        border: 2px solid var(--glass-border);
+        border-radius: 20px;
+        padding: 30px 20px;
+        min-width: 100px;
+        box-shadow: var(--shadow-premium);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .countdown-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--gradient-accent);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+
+      .countdown-item:hover {
+        transform: scale(1.1) translateY(-5px);
+        box-shadow: var(--neon-glow), var(--shadow-premium);
+      }
+
+      .countdown-item:hover::before {
+        transform: scaleX(1);
+      }
+
+      .countdown-number {
+        display: block;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        background: var(--gradient-accent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+
+      .countdown-label {
+        display: block;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+      /* Elite Details Section */
+      .details-section {
+        margin: 80px 0;
+      }
+
+      .section-title {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        text-align: center;
+        margin-bottom: 50px;
+        background: var(--gradient-accent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+        letter-spacing: -1px;
+      }
+
+      .details-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+      }
+
+      .detail-card {
+        background: var(--gradient-card);
+        backdrop-filter: blur(25px);
+        border: 2px solid var(--glass-border);
+        border-radius: 25px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: var(--shadow-premium);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .detail-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--gradient-accent);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+
+      .detail-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--neon-glow), var(--shadow-premium);
+      }
+
+      .detail-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .detail-icon {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+      }
+
+      .detail-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.3rem, 3vw, 1.8rem);
+        color: var(--primary-gold);
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .detail-text {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        color: var(--text-light);
+        line-height: 1.6;
+        font-weight: 400;
+      }
+
+      /* Premium Registration Form */
+      .registration-section {
+        margin: 80px 0;
+        text-align: center;
+      }
+
+      .registration-form {
+        background: var(--gradient-card);
+        backdrop-filter: blur(25px);
+        border: 2px solid var(--glass-border);
+        border-radius: 30px;
+        padding: 50px 40px;
+        max-width: 700px;
+        margin: 0 auto;
+        box-shadow: var(--shadow-premium);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .registration-form::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 215, 0, 0.05),
+          transparent
+        );
+        animation: shimmer 4s infinite;
+      }
+
+      .form-group {
+        margin-bottom: 30px;
+        text-align: left;
+      }
+
+      .form-label {
+        display: block;
+        font-weight: 600;
+        color: var(--champagne);
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+      }
+
+      .required::after {
+        content: " *";
+        color: var(--accent-rose);
+        font-weight: bold;
+      }
+
+      .form-input,
+      .form-select,
+      .form-textarea {
+        width: 100%;
+        padding: 18px 20px;
+        border: 2px solid var(--glass-border);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        color: var(--text-light);
+        font-size: 1.1rem;
+        font-family: inherit;
+        transition: all 0.3s ease;
+        outline: none;
+      }
+
+      .form-input::placeholder,
+      .form-textarea::placeholder {
+        color: var(--text-muted);
+        font-style: italic;
+      }
+
+      .form-input:focus,
+      .form-select:focus,
+      .form-textarea:focus {
+        border-color: var(--primary-gold);
+        box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .form-select option {
+        background: var(--rich-black);
+        color: var(--text-light);
+      }
+
+      .radio-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .radio-option {
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 12px 18px;
+        border-radius: 25px;
+        border: 2px solid var(--glass-border);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        min-width: 120px;
+        justify-content: center;
+      }
+
+      .radio-option:hover {
+        background: rgba(255, 215, 0, 0.1);
+        border-color: var(--primary-gold);
+      }
+
+      .radio-option input[type="radio"] {
+        margin-right: 8px;
+        accent-color: var(--primary-gold);
+      }
+
+      .radio-option input[type="radio"]:checked + span {
+        color: var(--primary-gold);
+        font-weight: 600;
+      }
+
+      .custom-amount {
+        display: none;
+        margin-top: 15px;
+      }
+
+      .custom-amount .form-input {
+        background: rgba(255, 215, 0, 0.1);
+        border-color: var(--primary-gold);
+      }
+
+      .loading {
+        display: none;
+        text-align: center;
+        margin: 30px 0;
+        padding: 30px;
+        background: rgba(255, 215, 0, 0.1);
+        border-radius: 15px;
+        border: 2px solid var(--primary-gold);
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(255, 215, 0, 0.3);
+        border-top: 4px solid var(--primary-gold);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 15px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .submit-btn {
+        background: var(--gradient-accent);
+        color: var(--rich-black);
+        border: none;
+        padding: 20px 40px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: var(--shadow-premium);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .submit-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: left 0.5s ease;
+      }
+
+      .submit-btn:hover {
+        transform: scale(1.05) translateY(-3px);
+        box-shadow: var(--neon-glow), var(--shadow-premium);
+      }
+
+      .submit-btn:hover::before {
+        left: 100%;
+      }
+
+      .submit-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .status-message {
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 15px;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+
+      .status-message.success {
+        background: rgba(72, 187, 120, 0.2);
+        border: 2px solid #48bb78;
+        color: #68d391;
+      }
+
+      .status-message.error {
+        background: rgba(245, 101, 101, 0.2);
+        border: 2px solid #f56565;
+        color: #fc8181;
+      }
+
+      /* Elite Footer */
+      .footer {
+        text-align: center;
+        margin-top: 80px;
+        padding: 40px 20px;
+        background: var(--gradient-card);
+        backdrop-filter: blur(25px);
+        border: 2px solid var(--glass-border);
+        border-radius: 25px;
+        box-shadow: var(--shadow-premium);
+      }
+
+      .footer p {
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
+        color: var(--champagne);
+        font-weight: 500;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px 15px;
+        }
+
+        .header {
+          padding: 30px 20px;
+          margin-bottom: 30px;
+        }
+
+        .countdown {
+          gap: 15px;
+        }
+
+        .countdown-item {
+          padding: 20px 15px;
+          min-width: 80px;
+        }
+
+        .details-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .detail-card {
+          padding: 30px 20px;
+        }
+
+        .registration-form {
+          padding: 30px 25px;
+          margin: 0 10px;
+        }
+
+        .radio-group {
+          flex-direction: column;
+        }
+
+        .radio-option {
+          justify-content: flex-start;
+          min-width: auto;
+        }
+
+        .submit-btn {
+          font-size: 1.1rem;
+          padding: 18px 35px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .registration-form {
+          padding: 25px 20px;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+          padding: 15px 18px;
+          font-size: 1rem;
+        }
+
+        .submit-btn {
+          font-size: 1rem;
+          padding: 16px 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Luxury floating particles -->
+    <div class="particles"></div>
+
+    <div class="container">
+      <!-- Premium Header -->
+      <header class="header">
+        <h1 class="title">🥂 Fantine & Rayan 🥂</h1>
+        <p class="subtitle">Birthday Party</p>
+        <p class="date-info">🎫 Vendredi 14 Novembre 2025 · 23h00</p>
+      </header>
+
+      <!-- Elite Countdown -->
+      <section class="countdown-section">
+        <h2 class="countdown-title">Temps restant avant la fête de l'année</h2>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days">00</span>
+            <span class="countdown-label">Jours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">00</span>
+            <span class="countdown-label">Heures</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label">Secondes</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Elite Details -->
+      <section class="details-section">
+        <h2 class="section-title">Détails de la Ksaraaa</h2>
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="detail-icon">🏛️</div>
+            <h3 class="detail-title">Lieu Exclusif</h3>
+            <p class="detail-text">
+              Un lieu d'exception vous attend pour cette soirée mémorable.
+              L'adresse exacte sera révélée aux invités confirmés.
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🍾</div>
+            <h3 class="detail-title">Bar Premium</h3>
+            <p class="detail-text">
+              Champagne, cocktails signatures et boissons haut de gamme. Un bar
+              ouvert pour une expérience gustative d'exception.
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🎵</div>
+            <h3 class="detail-title">Ambiance Musicale</h3>
+            <p class="detail-text">
+              Mix éclectique et playlist soigneusement sélectionnée pour une
+              ambiance parfaite toute la soirée.
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🎂</div>
+            <h3 class="detail-title">Gâteau d'Anniversaire</h3>
+            <p class="detail-text">
+              Création pâtissière exclusive pour célébrer dignement ces 25 & 24
+              années de bonheur !
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premium Registration Form -->
+      <section class="registration-section">
+        <h2 class="section-title">🎫 Confirme-nous ta présence</h2>
+        <form class="registration-form" id="registrationForm">
+          <div class="form-group">
+            <label for="name" class="form-label required">Nom complet</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              placeholder="Votre nom et prénom"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="votre.email@exemple.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Téléphone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-input"
+              placeholder="+33 6 12 34 56 78"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="guests" class="form-label"
+              >Nombre d'invités (toi inclus)</label
+            >
+            <select id="guests" name="guests" class="form-select">
+              <option value="1">1 personne (moi uniquement)</option>
+              <option value="2">2 personnes</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes (Dose...)</option>
+              <option value="5+">
+                5 personnes ou plus (t'abuses un peu chacal)
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Budget participation</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="budget" value="5" />
+                <span>5€</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="budget" value="10" />
+                <span>10€</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="budget" value="15" />
+                <span>15€</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="budget" value="autre" />
+                <span>Autre montant</span>
+              </label>
+            </div>
+            <div class="custom-amount">
+              <input
+                type="number"
+                id="customAmount"
+                name="customAmount"
+                class="form-input"
+                placeholder="Montant personnalisé en €"
+                min="1"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message (optionnel)</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-textarea"
+              placeholder="Partagez vos attentes, restrictions alimentaires, ou tout message pour les fêtés..."
+              rows="3"
+            ></textarea>
+          </div>
+          <!-- Honeypot - Piège à bots (invisible) -->
+          <input
+            type="text"
+            name="honeypot"
+            style="
+              display: none !important;
+              visibility: hidden !important;
+              position: absolute !important;
+              left: -9999px !important;
+            "
+            tabindex="-1"
+            autocomplete="off"
+          />
+
+          <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Réservation en cours...</p>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            🥂 Je confirme ma présence 🥂
+          </button>
+        </form>
+
+        <!-- Status Message Container -->
+        <div id="statusMessage"></div>
+      </section>
+
+      <!-- Elite Footer 
+      <footer class="footer">
+        <p>🥂 Une soirée d'exception vous attend ! 🥂</p>
+        <p style="margin-top: 15px; opacity: 0.8; font-size: 1rem">
+          Questions ? Contactez-nous pour plus d'informations exclusives
+        </p>
+      </footer>
+      -->
+    </div>
+
+    <script>
+      // ===== CONFIGURATION MODULAIRE - PRESERVED EXACTLY =====
+      const CONFIG = {
+        eventDate: new Date("2025-11-14T20:00:00"), // Date de l'événement (modifiable)
+        googleAppsScriptURL:
+          "https://script.google.com/macros/s/AKfycbz2P6Bmqut7ovV05jDhL4tNGAR5saI1bwbNwfSD0_6EJVItXPOdpcEpgxTqIEwNe8HZtA/exec", // À remplacer par votre URL
+        particleCount: 60, // Increased for premium effect
+      };
+
+      // ===== PROTECTION ANTI-BOT =====
+      let formSubmissionTime = 0;
+
+      // Enregistrer le moment où le formulaire devient disponible
+      document.addEventListener("DOMContentLoaded", function () {
+        formSubmissionTime = Date.now();
+      });
+
+      // ===== LUXURY PARTICLE SYSTEM - FIXED =====
+      function createParticles() {
+        const particlesContainer = document.querySelector(".particles");
+
+        for (let i = 0; i < CONFIG.particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.className = "particle";
+
+          // FIXED: Particles now start from the bottom of the screen
+          particle.style.left = Math.random() * 100 + "%";
+          particle.style.bottom = "-50px"; // Start from bottom instead of using top
+          particle.style.animationDelay = Math.random() * 8 + "s";
+          particle.style.animationDuration = Math.random() * 6 + 6 + "s";
+
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      // ===== COMPTE À REBOURS - PRESERVED EXACTLY =====
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const eventTime = CONFIG.eventDate.getTime();
+        const timeLeft = eventTime - now;
+
+        if (timeLeft > 0) {
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+          document.getElementById("days").textContent = String(days).padStart(
+            2,
+            "0"
+          );
+          document.getElementById("hours").textContent = String(hours).padStart(
+            2,
+            "0"
+          );
+          document.getElementById("minutes").textContent = String(
+            minutes
+          ).padStart(2, "0");
+          document.getElementById("seconds").textContent = String(
+            seconds
+          ).padStart(2, "0");
+        } else {
+          document.getElementById("countdown").innerHTML =
+            '<div class="countdown-item"><span class="countdown-number">🥂</span><span class="countdown-label">C\'est parti !</span></div>';
+        }
+      }
+
+      // ===== GESTION DU FORMULAIRE - FIXED SCROLL TIMING =====
+      function showStatus(message, type, shouldScroll = false) {
+        const statusDiv = document.getElementById("statusMessage");
+        statusDiv.innerHTML = `<div class="status-message ${type}">${message}</div>`;
+
+        // FIXED: Only scroll if explicitly requested (after loading is complete)
+        if (shouldScroll) {
+          statusDiv.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+
+      // ===== FESTIVE CONFETTI EFFECT =====
+      function triggerConfettiCelebration() {
+        for (let i = 0; i < 50; i++) {
+          setTimeout(() => {
+            const confetti = document.createElement("div");
+            confetti.textContent = [
+              "🥂",
+              "🍾",
+              "✨",
+              "🌟",
+              "💫",
+              "🎉",
+              "🎊",
+              "🥳",
+            ][Math.floor(Math.random() * 9)];
+            confetti.style.position = "fixed";
+            confetti.style.left = Math.random() * 100 + "%";
+            confetti.style.top = "-50px";
+            confetti.style.fontSize = Math.random() * 1.5 + 2 + "rem";
+            confetti.style.pointerEvents = "none";
+            confetti.style.zIndex = "1000";
+            confetti.style.animation = "luxuryFloat 5s ease-out forwards";
+            confetti.style.textShadow = "0 0 15px rgba(255, 215, 0, 0.9)";
+            document.body.appendChild(confetti);
+
+            setTimeout(() => confetti.remove(), 5000);
+          }, i * 100);
+        }
+      }
+
+      // ===== REPLACE FORM WITH THANK YOU MESSAGE =====
+      function showThankYouMessage() {
+        const formSection = document.querySelector(".registration-form");
+        formSection.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px;">
+            <div style="font-size: 4rem; margin-bottom: 20px;">🥳</div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--primary-gold); margin-bottom: 20px; font-weight: 700;">
+              Ta présence vient d'être confirmée !
+            </h3>
+            <p style="font-size: 1.4rem; color: var(--champagne); margin-bottom: 15px; font-weight: 500;">
+              Hâte de te voir à la soirée ! 🎉
+            </p>
+            <div style="margin-top: 30px; padding: 20px; background: rgba(255, 215, 0, 0.1); border-radius: 15px; border: 2px solid var(--primary-gold);">
+              <p style="font-size: 1rem; color: var(--primary-gold); font-weight: 600; margin: 0;">
+                ⏰ Rendez-vous le vendredi 14 Novembre à 20h00 ! 🥂
+              </p>
+            </div>
+          </div>
+        `;
+      }
+
+      function showLoading(show) {
+        document.getElementById("loading").style.display = show
+          ? "block"
+          : "none";
+        document.getElementById("submitBtn").disabled = show;
+      }
+
+      // ===== SOUMISSION DU FORMULAIRE - FIXED SCROLL TIMING =====
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          // ===== PROTECTION ANTI-BOT =====
+          // 1. Vérifier le honeypot
+          const honeypot = new FormData(this).get("honeypot");
+          if (honeypot) {
+            console.log("Bot détecté via honeypot");
+            return; // Bloquer silencieusement
+          }
+
+          // 2. Vérifier le timing (minimum 3 secondes)
+          const timeSinceLoad = Date.now() - formSubmissionTime;
+          if (timeSinceLoad < 3000) {
+            showStatus(
+              "⏰ Veuillez patienter quelques secondes avant de soumettre.",
+              "error",
+              true
+            );
+            return;
+          }
+
+          // 3. Rate limiting simple (localStorage)
+          const lastSubmission = localStorage.getItem("lastSubmissionTime");
+          const now = Date.now();
+          if (lastSubmission && now - parseInt(lastSubmission) < 300000) {
+            // 5 minutes
+            showStatus(
+              "⏳ Vous avez déjà soumis récemment. Attendez 5 minutes.",
+              "error",
+              true
+            );
+            return;
+          }
+
+          showLoading(true);
+          showStatus("", "", false); // Don't scroll during loading
+
+          // Récupération des données du formulaire
+          const formData = new FormData(this);
+          const data = {
+            timestamp: new Date().toLocaleString("fr-FR"),
+            name: formData.get("name"),
+            email: formData.get("email") || "Non renseigné",
+            phone: formData.get("phone") || "Non renseigné",
+            guests: formData.get("guests") || "1",
+            budget:
+              formData.get("budget") === "autre"
+                ? formData.get("customAmount") + "€"
+                : formData.get("budget")
+                ? formData.get("budget") + "€"
+                : "Non renseigné",
+            message: formData.get("message") || "Aucun message",
+          };
+
+          try {
+            // IMPORTANT : Vous devez remplacer cette URL par celle de votre Google Apps Script
+            if (
+              CONFIG.googleAppsScriptURL === "VOTRE_URL_GOOGLE_APPS_SCRIPT_ICI"
+            ) {
+              throw new Error("URL Google Apps Script non configurée");
+            }
+
+            // Utilisation de fetch avec mode no-cors comme fallback
+            const response = await fetch(CONFIG.googleAppsScriptURL, {
+              method: "POST",
+              mode: "no-cors",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            });
+
+            // Avec no-cors, on ne peut pas lire la réponse, donc on assume que ça a marché
+            showLoading(false);
+
+            // 🎉 FESTIVE SUCCESS EXPERIENCE 🎉
+            triggerConfettiCelebration(); // Launch confetti celebration!
+            showThankYouMessage(); // Replace form with thank you message
+            this.reset();
+          } catch (error) {
+            console.error("Erreur:", error);
+
+            // Méthode alternative : utilisation d'un iframe invisible
+            try {
+              console.log(
+                "Submission with no cors didn't work. Trying again with iFrame..."
+              );
+              const iframe = document.createElement("iframe");
+              iframe.style.display = "none";
+              iframe.name = "hiddenFrame";
+              document.body.appendChild(iframe);
+
+              const form = document.createElement("form");
+              form.method = "POST";
+              form.action = CONFIG.googleAppsScriptURL;
+              form.target = "hiddenFrame";
+
+              // Ajout des données comme champs cachés
+              Object.keys(data).forEach((key) => {
+                const input = document.createElement("input");
+                input.type = "hidden";
+                input.name = key;
+                input.value = data[key];
+                form.appendChild(input);
+              });
+
+              document.body.appendChild(form);
+              form.submit();
+
+              // Nettoyage
+              setTimeout(() => {
+                document.body.removeChild(form);
+                document.body.removeChild(iframe);
+              }, 1000);
+
+              showLoading(false);
+
+              // 🎉 FESTIVE SUCCESS EXPERIENCE 🎉
+              triggerConfettiCelebration(); // Launch confetti celebration!
+              showThankYouMessage(); // Replace form with thank you message
+
+              showStatus(
+                "🥂 Réservation confirmée ! Merci et à bientôt pour cette soirée d'exception ! 🥂",
+                "success",
+                true // FIXED: Now scroll after loading is complete
+              );
+              this.reset();
+            } catch (fallbackError) {
+              showLoading(false);
+              showStatus(
+                "❌ Une erreur est survenue. Contactez-nous directement pour confirmer votre réservation VIP.",
+                "error",
+                true // FIXED: Now scroll after loading is complete
+              );
+            }
+          }
+        });
+
+      // ===== GESTION DU MONTANT PERSONNALISÉ - PRESERVED EXACTLY =====
+      document.addEventListener("change", function (e) {
+        if (e.target.name === "budget") {
+          const customAmountDiv = document.querySelector(".custom-amount");
+          if (e.target.value === "autre") {
+            customAmountDiv.style.display = "block";
+          } else {
+            customAmountDiv.style.display = "none";
+            document.getElementById("customAmount").value = "";
+          }
+        }
+      });
+
+      // ===== INITIALISATION =====
+      document.addEventListener("DOMContentLoaded", function () {
+        createParticles();
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      });
+
+      // ===== PREMIUM EASTER EGG - ENHANCED CONFETTI =====
+      document.querySelector(".title").addEventListener("click", function () {
+        for (let i = 0; i < 30; i++) {
+          setTimeout(() => {
+            const confetti = document.createElement("div");
+            confetti.textContent = ["🥂", "🍾", "✨", "🥳", "🎉"][
+              Math.floor(Math.random() * 6)
+            ];
+            confetti.style.position = "fixed";
+            confetti.style.left = Math.random() * 100 + "%";
+            confetti.style.top = "-50px";
+            confetti.style.fontSize = "2.5rem";
+            confetti.style.pointerEvents = "none";
+            confetti.style.zIndex = "1000";
+            confetti.style.animation = "luxuryFloat 4s ease-out forwards";
+            confetti.style.textShadow = "0 0 10px rgba(255, 215, 0, 0.8)";
+            document.body.appendChild(confetti);
+
+            setTimeout(() => confetti.remove(), 4000);
+          }, i * 80);
+        }
+      });
+    </script>
+  </body>
+</html>
