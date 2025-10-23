@@ -748,7 +748,7 @@
         <h2 class="section-title">Détails de la Ksaraaa</h2>
         <div class="details-grid">
           <div class="detail-card">
-            <div class="detail-icon">🏛️</div>
+            <div class="detail-icon">📍</div>
             <h3 class="detail-title">Lieu Exclusif</h3>
             <p class="detail-text">
               Un lieu d'exception vous attend pour cette soirée mémorable.
@@ -799,24 +799,13 @@
           </div>
 
           <div class="form-group">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Email (optionnel)</label>
             <input
               type="email"
               id="email"
               name="email"
               class="form-input"
               placeholder="votre.email@exemple.com"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="phone" class="form-label">Téléphone</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              class="form-input"
-              placeholder="+33 6 12 34 56 78"
             />
           </div>
 
@@ -834,7 +823,7 @@
               </option>
             </select>
           </div>
-
+          <!-- Montant (si participation) 
           <div class="form-group">
             <label class="form-label">Budget participation</label>
             <div class="radio-group">
@@ -866,6 +855,7 @@
               />
             </div>
           </div>
+          -->
 
           <div class="form-group">
             <label for="message" class="form-label">Message (optionnel)</label>
@@ -873,7 +863,7 @@
               id="message"
               name="message"
               class="form-textarea"
-              placeholder="Partagez vos attentes, restrictions alimentaires, ou tout message pour les fêtés..."
+              placeholder="hâaaate ma vie!!!"
               rows="3"
             ></textarea>
           </div>
@@ -1104,12 +1094,12 @@
             email: formData.get("email") || "Non renseigné",
             phone: formData.get("phone") || "Non renseigné",
             guests: formData.get("guests") || "1",
-            budget:
+            /*budget:
               formData.get("budget") === "autre"
                 ? formData.get("customAmount") + "€"
                 : formData.get("budget")
                 ? formData.get("budget") + "€"
-                : "Non renseigné",
+                : "Non renseigné",*/
             message: formData.get("message") || "Aucun message",
           };
 
