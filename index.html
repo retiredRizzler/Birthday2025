@@ -237,10 +237,11 @@
       }
 
       .countdown-title {
-        font-family: "DM Serif Display", serif;
+        font-family: "Inter", serif;
         font-size: clamp(1.5rem, 4vw, 2.5rem);
+        text-shadow: var(--neon-glow);
         margin-bottom: 40px;
-        color: var(--champagne);
+        color: var(--primary-gold);
         font-weight: 600;
         letter-spacing: 1px;
       }
@@ -314,7 +315,7 @@
       }
 
       .section-title {
-        font-family: "DM Serif Display", serif;
+        font-family: "Inter", serif;
         font-size: clamp(2rem, 5vw, 3rem);
         text-align: center;
         margin-bottom: 50px;
@@ -374,11 +375,12 @@
       }
 
       .detail-title {
-        font-family: "DM Serif Display", serif;
+        font-family: "Inter", serif;
         font-size: clamp(1.3rem, 3vw, 1.8rem);
         color: var(--primary-gold);
         margin-bottom: 15px;
-        font-weight: 600;
+        text-shadow: var(--neon-glow);
+        font-weight: 700;
       }
 
       .detail-text {
@@ -433,7 +435,7 @@
         font-weight: 600;
         color: var(--champagne);
         margin-bottom: 8px;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         letter-spacing: 0.5px;
       }
 
@@ -722,7 +724,7 @@
 
       <!-- Elite Countdown -->
       <section class="countdown-section">
-        <h2 class="countdown-title">Temps restant avant la ksara de l'année : </h2>
+        <h2 class="countdown-title">Tic Tac... </h2>
         <div class="countdown" id="countdown">
           <div class="countdown-item">
             <span class="countdown-number" id="days">00</span>
@@ -745,11 +747,11 @@
 
       <!-- Elite Details -->
       <section class="details-section">
-        <h2 class="section-title">Détails</h2>
+        <h2 class="section-title">Détails Supplémentaires</h2>
         <div class="details-grid">
           <div class="detail-card">
             <div class="detail-icon">📍</div>
-            <h3 class="detail-title">Lieu Exclusif</h3>
+            <h3 class="detail-title">LIEU</h3>
             <p class="detail-text">
               La soirée se déroulera au bar
               <a style="color: #f5e6a3" href="https://www.thesneakers.tv/">
@@ -762,15 +764,15 @@
           </div>
           <div class="detail-card">
             <div class="detail-icon">🍾</div>
-            <h3 class="detail-title">Bar Premium</h3>
+            <h3 class="detail-title">BAR</h3>
             <p class="detail-text">
               Du simple soft au cocktail haut de gamme, un bar premium restera 
-              ouvert pour combler votre soif. Tardez pas trop il y aura des boissons offertes pour les plus ponctuels d'entre vous.  
+              ouvert pour combler votre soif. Tardez pas trop, il y aura des boissons offertes pour les plus ponctuels d'entre vous.  
             </p>
           </div>
           <div class="detail-card">
             <div class="detail-icon">🎵</div>
-            <h3 class="detail-title">Ambiance Musicale</h3>
+            <h3 class="detail-title">SON</h3>
             <p class="detail-text">
               Mix éclectique et playlist soigneusement sélectionnée par le meilleur DJ de la ville aka <a style="color: #f5e6a3;" href="https://www.instagram.com/martinlopes_13/"> Martin Lopes</a> pour une
               ambiance méchante toute la soirée.
@@ -1035,7 +1037,7 @@
         formSection.innerHTML = `
           <div style="text-align: center; padding: 40px 20px;">
             <div style="font-size: 4rem; margin-bottom: 20px;">🥳</div>
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--primary-gold); margin-bottom: 20px; font-weight: 700;">
+            <h3 style="font-family: 'Inter', serif; font-size: 2.5rem; color: var(--primary-gold); margin-bottom: 20px; font-weight: 700;">
               Ta présence vient d'être confirmée !
             </h3>
             <p style="font-size: 1.4rem; color: var(--champagne); margin-bottom: 15px; font-weight: 500;">
